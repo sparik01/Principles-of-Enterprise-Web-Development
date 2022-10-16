@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Beartooth Hiking Company</title>
+	<style type="text/css"></style>
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<script type = "text/javascript" src="dynamicSelect.js"></script>
+	<script type = "text/javascript" src="validations.js"></script>
+</head>
+<body>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2"
+cellspacing="2">
+	<tbody>
+		<tr>
+			<td
+	style="vertical-align: bottom; width: 362px; text-align: right;"><img
+	src="Hikers.PNG" alt=""></td>
+		<td style="vertical-align: top; text-align: center; width: 620px;"><img
+src="Logo.PNG" alt=""></td>
+	<td style="vertical-align: bottom; width: 359px;"><img
+src="Hikers.PNG" alt=""></td>
+		</tr>
+	</tbody>
+</table>
+<br>
+<br>
+<big>Welcome to <span style="font-family: Elephant;">Beartooth Hiking
+Company</span>!&nbsp; Experience the beauty
+of the Beartooth Mountains spanning south central Montana and
+northwest Wyoming.&nbsp; Please see below for the hiking tours that are
+currently available.&nbsp; The tours are updated frequently based on
+the season and tour guide availability.<br>
+</big><br style="font-family: Elephant;">
+<table
+	style="text-align: left; width: 1000px; margin-left: auto; margin-right: auto; height: 165px;"
+	border="0" cellpadding="2" cellspacing="2">
+	<tbody>
+		<tr>
+			<td
+	style="vertical-align: top; width: 450px; text-align: right; font-family: Elephant;"><img
+	src="Trail3.PNG" alt=""></td>
+			<td style="vertical-align: top; width: 354px; text-align: center;">
+			<h3>Current Hiking Tours</h3>
+			<ul>
+				<li style="text-align: left;"><big>Hellroaring Plateau</big></li>
+				<li style="text-align: left;"><big>Gardiner Lake</big></li>
+				<li style="text-align: left;"><big>Beaten Path</big><br>
+				</li>
+			</ul>
+			</td>
+			<td style="vertical-align: top; width: 503px; text-align: left;"><img
+src="Trail2.PNG" alt=""></td>
+		</tr>
+	</tbody>
+</table>
+<br>
+<br>
+<table
+style="text-align: left; width: 903px; height: 160px; margin-left: auto; margin-right: auto;"
+border="1" cellpadding="2" cellspacing="2">
+	<tbody>
+	<tr>
+		<td colspan="4" rowspan="1" style="vertical-align: top;">
+		<h3>Hike Rates and Information</h3>
+		</td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top;">
+		<h4>Tour</h4>
+		</td>
+		<td style="vertical-align: top;">
+		<h4>Duration (days)</h4>
+		</td>
+		<td style="vertical-align: top;">
+		<h4>Difficulty</h4>
+		</td>
+		<td style="vertical-align: top;">
+		<h4>Rate*</h4>
+		</td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top;">Hellroaring Plateau<br>
+		</td>
+		<td style="vertical-align: top;">2, 3 or 4 <br>
+		</td>
+		<td style="vertical-align: top;">Easy<br>
+		</td>
+		<td style="vertical-align: top;">$35/day<br>
+		</td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top;">Gardiner Lake<br>
+		</td>
+		<td style="vertical-align: top;">3 or 5<br>
+		</td>
+		<td style="vertical-align: top;">Intermediate<br>
+		</td>
+		<td style="vertical-align: top;">$40/day<br>
+		</td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top;">Beaten Path<br>
+		</td>
+		<td style="vertical-align: top;">5 or 7<br>
+		</td>
+		<td style="vertical-align: top;">Difficult<br>
+		</td>
+		<td style="vertical-align: top;">$45/day<br>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4" rowspan="1" style="vertical-align: top;">
+		<h6>* Please note, all listed rates have a 50% surcharge for
+Saturday or Sunday hikes.</h6>
+		</td>
+	</tr>
+</tbody>
+</table>
+<br>
+<br>
+<table
+style="text-align: left; width: 380px; margin-left: auto; margin-right: auto;"
+border="1" cellpadding="2" cellspacing="2">
+	<tbody>
+		<tr align="center">
+			<td colspan="2" rowspan="1"
+style="vertical-align: top; width: 229px;">
+			<h3>Estimate the cost of your tour</h3>
+			</td>
+		</tr>
+	<tr>
+	<!--<form action="http://localhost:8080/Parikh_Servlet2/Parikh_Servlet2" method=GET 
+	onsubmit = "return !!(validateMonth() & validateDay() & validateYear() & validateParty() & validateTour() & validateDuration());">-->
+	<form action="https://web7.jhuep.com:443/Parikh_Servlet2/Parikh_Servlet2" method=GET
+	onsubmit = "return !!(validateMonth() & validateDay() & validateYear() & validateParty() & validateTour() & validateDuration());">
+	<td style="vertical-align: top; width: 110px;">Select Date**:<br>
+	</td>
+	<td style="vertical-align: top; width: 229px;">&nbsp;
+		<select name = "month" id = "month" onchange="generateDay('month','day')" onblur = "return validateMonth()">
+			<option value="">Month</option>
+    		<option value="6">June</option>
+    		<option value="7">July</option>
+    		<option value="8">August</option>
+    		<option value="9">September</option>
+  		</select>
+  		<select name = "day" id = "day" onblur = "return validateDay()"></select>
+  		<select name = "year" id = "year" onblur = "return validateYear()">
+  			<option value="">Year</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+	</select>
+	</td>
+	</tr>
+	<tr>
+	<tr>
+	<td style="vertical-align: top; width: 110px;">Size of Party:<br>
+	</td>
+	<td style="vertical-align: top; width: 229px;">
+		<input type = "text" name = "partySize" id = "partySize" maxlength = "2" size ="15" onchange="validateParty()" >
+	</td>
+	</tr>
+	<tr>
+	<tr>
+	<td style="vertical-align: top; width: 110px;">Available Tours:<br>
+	</td>
+	<td style="vertical-align: top; width: 229px;">
+		<select name = "tour" id = "tour" onchange="populate('tour','duration')" onblur = "return validateTour()" >
+			<option value="">Choose Tour...</option>
+    		<option value="1">Hellroaring Plateau</option>
+    		<option value="0">Gardiner Lake</option>
+    		<option value="2">Beaten Path</option>
+		</select>
+	</td>
+	</tr>
+	<tr>
+	<td style="vertical-align: top; width: 110px;">Duration:<br>
+	</td>
+	<td style="vertical-align: top; width: 229px;">
+		<select name = "duration" id = "duration" onblur = "return validateDuration()"></select>
+	</td>
+	</tr>
+	<tr>
+	<tr>
+		<td style="vertical-align: top; width: 110px;"><br>
+		</td>
+		<td style="vertical-align: top; width: 229px;"><input
+type ="SUBMIT" name = "submit" value = "Get Estimate"> </td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; width: 110px;">Estimated Cost:<br>
+		</td>
+		<td style="vertical-align: top; width: 229px;"><input 
+type = "text"  name = "cost" maxlength="15" size="15" value="$ 0.00"></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="1" style="vertical-align: top;">
+		<h6>&nbsp;**Current season runs from 6/1/2007 to 9/30/2040.<br>
+		</h6>
+		</td>
+	</tr>
+	</tbody>
+	</table>
+<br>
+</form>
+<span style="font-weight: bold;"><br>
+<br>
+</span>
+<table
+style="text-align: left; width: 1201px; height: 170px; margin-left: auto; margin-right: auto;"
+border="0" cellpadding="2" cellspacing="2">
+<tbody>
+	<tr>
+	<td style="vertical-align: top; text-align: right; width: 300px;"><img
+style="width: 219px; height: 134px;" src="WalkingTour.PNG" alt=""></td>
+	<td style="vertical-align: top; width: 420px;">
+	<div>
+	<h5>Have any questions or want to book a hike?<br>
+	</h5>
+	</div>
+	<div>
+	<p>Please contact us at: <br>
+fakeemail@beartoothhiking.com<br>
+(555) 555-5555</p>
+	</div>
+	</td>
+	<td style="vertical-align: top; width: 300px;"><img
+style="width: 231px; height: 135px;" src="TentLarge.PNG" alt=""></td>
+	</tr>
+	</tbody>
+</table>
+<br>
+<br>
+<div style="font-weight: bold;">
+<address>For more information about the Beartooth Mountains please
+visit: <a
+href="https://www.fs.usda.gov/recarea/shoshone/recarea/?recid=80899"
+target="_blank">https://www.fs.usda.gov/recarea/shoshone/recarea/?recid=80899</a></address>
+</div>
+<br>
+<br>
+</body>
+</html>
